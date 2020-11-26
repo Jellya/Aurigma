@@ -1,4 +1,44 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+/*-------------*/
+
 $font-stack: Roboto, sans-serif;
+$title: #222222;
+$subtitle: #555555;
+$nav: #444444;
+$button: #30C2FF;
+$buttonhov: #11a4e4;
 
 @font-face {
   font-family: "Roboto";
@@ -9,12 +49,69 @@ $font-stack: Roboto, sans-serif;
 
 body {
   font-family: $font-stack;
-  #logo {
-    width: 10rem;
-  }
+  position: relative;
+  background-color: #fff;
+  color:$subtitle;
+  max-width: 1920px;
+  font-size: 14px;
   .container {
-    img {
-      width: 20rem;
+   margin: 0 auto;
+   max-width: 1150px;
+   position: relative;
+   padding: 0 25px;
+  }
+
+  a {
+    color: $nav;
+  }
+
+  .button {
+    background-color: $button;
+    color:#fff;
+    padding: 12px 32px;
+    border-radius: 3px;
+    &:hover {
+      background-color:$buttonhov;
     }
   }
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  height: 60px;
+  white-space: nowrap;
+  .header {
+    &__nav {
+      display: flex;
+    }
+    &__menu {
+      display: flex;
+      align-items: center;
+      margin-left: 56px;
+      @media (max-width:768px) {
+        display:none;
+      }
+    }
+    &__info {
+      display: flex;
+      align-items: center;
+    }
+    &__link,&__phone,&__search {
+      padding-right: 33px;
+    }
+    &__phone {
+      @media (max-width:1024px) {
+        display:none;
+      }
+    }
+    &__viewdemo {
+      padding: 10px 20px;
+      @media (max-width:768px) {
+        display:none;
+      }
+    }
+  }
+}
+

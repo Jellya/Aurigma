@@ -1,9 +1,149 @@
 <% var data = {
-  title: "Заголовок | Проект",
-  author: "Harrix"
+  title: "Customer's Canvas"
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
-<div class="container">Первая страница.</div>
+<section class="container preview">
+  <div class="preview__desc">
+    <h1 class="preview__title">
+      Product customization for Shopify
+    </h1>
+    <p class="preview__text">
+      Want to offer your clients an easy way to order personalized paper and promotional items. Our team is here to help
+      you navigate the maze of offering web-to-print directly to your customers.
+    </p>
+    <a href="#" class="button preview__button">Contact us</a>
+  </div>
+  <img class="preview__image" src="img/preview.svg" alt="preview">
+</section>
+
+<section class="container how">
+  <h2 class="section__title">How we work with custom projects</h2>
+  <div class="how__items">
+    <div class="how__item">
+      <img class="item__icon" src="img/discuss.svg" alt="#">
+      <h3 class="item__title">
+        Discuss
+      </h3>
+      <P class="item__desc">
+        We collect the requirements of your project. What kind of products you want to sell online and how do you want
+        users to personalize it.
+      </P>
+    </div>
+    <div class="how__item">
+      <img class="item__icon" src="img/wecreate.svg" alt="#">
+      <h3 class="item__title">
+        We create
+      </h3>
+      <P class="item__desc">
+        We develop ready-to-go online storefront with online personalization capabilities based on your requirements.
+      </P>
+    </div>
+    <div class="how__item">
+      <img class="item__icon" src="img/yousell.svg" alt="#">
+      <h3 class="item__title">
+        You sell
+      </h3>
+      <P class="item__desc">
+        When the storefront is ready, you can start selling to your customers right away.
+      </P>
+    </div>
+  </div>
+</section>
+
+<section class="container boost">
+  <img class="section__image" src="img/boost.svg" alt="boost">
+  <div class="section__items">
+    <div class="boost__item">
+      <h3 class="item__title">
+        Quick start
+      </h3>
+      <P class="item__desc">
+        Using our services, you can launch or update your online storefront promptly and start exploring a new channel for your business.
+      </P>
+    </div>
+    <div class="boost__item">
+      <h3 class="item__title">
+        Quick start
+      </h3>
+      <P class="item__desc">
+        Using our services, you can launch or update your online storefront promptly and start exploring a new channel for your business.
+      </P>
+    </div>
+    <div class="boost__item">
+      <h3 class="item__title">
+        Quick start
+      </h3>
+      <P class="item__desc">
+        Using our services, you can launch or update your online storefront promptly and start exploring a new channel for your business.
+      </P>
+    </div>
+    <div class="boost__item">
+      <h3 class="item__title">
+        Quick start
+      </h3>
+      <P class="item__desc">
+        Using our services, you can launch or update your online storefront promptly and start exploring a new channel for your business.
+      </P>
+    </div>
+  </div>
+</section>
+
+<section class="container storefront">
+  <div class="section__desc">
+    <h2 class="section__title">Get a truly unique storefront</h2>
+    <p class="section__text">
+      There is no shortage of web-to-print solutions that offer standard personalization workflows for printed products.
+      However, if you want to offer a product with a unique scenario, things can get complicated. Such projects often
+      require a tremendous amount of custom work and can take many months to be completed. We have our own web-to-print
+      technology stack as well as the expertise to implement any product customization use case.
+    </p>
+  </div>
+  <img class="section__image" src="img/storefront.svg" alt="storefront">
+</section>
+
+<section class="container more">
+  <h2 class="section__title">Learn more about custom web-to-print</h2>
+  <div class="section__items">
+    <div class="more__item">
+      <img class="item__icon" src="img/blog.svg" alt="#">
+      <h3 class="item__title">
+        Blog: Creating custom personalization workflows
+      </h3>
+      <P class="item__desc">
+        Read about hurdles of implementing non-standard personalization workflows for web-to-print project.
+      </P>
+    </div>
+    <div class="more__item">
+      <img class="item__icon" src="img/blog.svg" alt="#">
+      <h3 class="item__title">
+        Blog: Creating custom personalization workflows
+      </h3>
+      <P class="item__desc">
+        Read about hurdles of implementing non-standard personalization workflows for web-to-print project.
+      </P>
+    </div>
+    <div class="more__item">
+      <img class="item__icon" src="img/blog.svg" alt="#">
+      <h3 class="item__title">
+        Blog: Creating custom personalization workflows
+      </h3>
+      <P class="item__desc">
+        Read about hurdles of implementing non-standard personalization workflows for web-to-print project.
+      </P>
+    </div>
+  </div>
+</section>
+
+<section class="container take">
+  <h2 class="section__title">
+    Take the most from web-to-print technology with Customer’s Canvas
+  </h2>
+  <p class="section__desc">
+    Reach our representatives and learn more how our technology and services can help you with your web-to-print strategy.
+  </p>
+  <a href="#" class="button take__button">Contact us</a>
+</section>
+
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>
