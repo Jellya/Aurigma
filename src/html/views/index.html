@@ -2,25 +2,25 @@
   title: "Customer's Canvas"
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
-
-<section class="container preview">
-  <div class="preview__desc">
-    <h1 class="preview__title">
+<div class="container">
+<section class="preview">
+  <div class="section__desc">
+    <h1 class="section__title">
       Product customization for Shopify
     </h1>
-    <p class="preview__text">
+    <p class="section__text">
       Want to offer your clients an easy way to order personalized paper and promotional items. Our team is here to help
       you navigate the maze of offering web-to-print directly to your customers.
     </p>
     <a href="#" class="button preview__button">Contact us</a>
   </div>
-  <img class="preview__image" src="img/preview.svg" alt="preview">
+  <img class="section__image" src="img/preview.svg" alt="preview">
 </section>
 
-<section class="container how">
+<section class="how">
   <h2 class="section__title">How we work with custom projects</h2>
-  <div class="how__items">
-    <div class="how__item">
+  <div class="section__items">
+    <div class="section__item">
       <img class="item__icon" src="img/discuss.svg" alt="#">
       <h3 class="item__title">
         Discuss
@@ -30,7 +30,7 @@
         users to personalize it.
       </P>
     </div>
-    <div class="how__item">
+    <div class="section__item">
       <img class="item__icon" src="img/wecreate.svg" alt="#">
       <h3 class="item__title">
         We create
@@ -39,7 +39,7 @@
         We develop ready-to-go online storefront with online personalization capabilities based on your requirements.
       </P>
     </div>
-    <div class="how__item">
+    <div class="section__item">
       <img class="item__icon" src="img/yousell.svg" alt="#">
       <h3 class="item__title">
         You sell
@@ -51,10 +51,10 @@
   </div>
 </section>
 
-<section class="container boost">
+<section class="boost">
   <img class="section__image" src="img/boost.svg" alt="boost">
   <div class="section__items">
-    <div class="boost__item">
+    <div class="section__item">
       <h3 class="item__title">
         Quick start
       </h3>
@@ -62,7 +62,7 @@
         Using our services, you can launch or update your online storefront promptly and start exploring a new channel for your business.
       </P>
     </div>
-    <div class="boost__item">
+    <div class="section__item">
       <h3 class="item__title">
         Quick start
       </h3>
@@ -70,7 +70,7 @@
         Using our services, you can launch or update your online storefront promptly and start exploring a new channel for your business.
       </P>
     </div>
-    <div class="boost__item">
+    <div class="section__item">
       <h3 class="item__title">
         Quick start
       </h3>
@@ -78,7 +78,7 @@
         Using our services, you can launch or update your online storefront promptly and start exploring a new channel for your business.
       </P>
     </div>
-    <div class="boost__item">
+    <div class="section__item">
       <h3 class="item__title">
         Quick start
       </h3>
@@ -89,7 +89,7 @@
   </div>
 </section>
 
-<section class="container storefront">
+<section class="storefront">
   <div class="section__desc">
     <h2 class="section__title">Get a truly unique storefront</h2>
     <p class="section__text">
@@ -102,10 +102,10 @@
   <img class="section__image" src="img/storefront.svg" alt="storefront">
 </section>
 
-<section class="container more">
+<section class="more">
   <h2 class="section__title">Learn more about custom web-to-print</h2>
   <div class="section__items">
-    <div class="more__item">
+    <div class="section__item">
       <img class="item__icon" src="img/blog.svg" alt="#">
       <h3 class="item__title">
         Blog: Creating custom personalization workflows
@@ -114,7 +114,7 @@
         Read about hurdles of implementing non-standard personalization workflows for web-to-print project.
       </P>
     </div>
-    <div class="more__item">
+    <div class="section__item">
       <img class="item__icon" src="img/blog.svg" alt="#">
       <h3 class="item__title">
         Blog: Creating custom personalization workflows
@@ -123,7 +123,7 @@
         Read about hurdles of implementing non-standard personalization workflows for web-to-print project.
       </P>
     </div>
-    <div class="more__item">
+    <div class="section__item">
       <img class="item__icon" src="img/blog.svg" alt="#">
       <h3 class="item__title">
         Blog: Creating custom personalization workflows
@@ -135,7 +135,7 @@
   </div>
 </section>
 
-<section class="container take">
+<section class="take">
   <h2 class="section__title">
     Take the most from web-to-print technology with Customer’s Canvas
   </h2>
@@ -144,6 +144,6 @@
   </p>
   <a href="#" class="button take__button">Contact us</a>
 </section>
-
+</div>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>

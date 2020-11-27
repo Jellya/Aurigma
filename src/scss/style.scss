@@ -54,15 +54,58 @@ body {
   color:$subtitle;
   max-width: 1920px;
   font-size: 14px;
+  top: 80px;
+
   .container {
    margin: 0 auto;
    max-width: 1150px;
-   position: relative;
    padding: 0 25px;
   }
 
   a {
     color: $nav;
+  }
+
+  .section__title {
+    font-weight: 700;
+    line-height: 44px;
+    text-align: center;
+    color: $title;
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  .section__desc {
+    width: 100%;
+    line-height: 26px;
+    font-size: 18px;
+  }
+  .section__text {
+  }
+  .section__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .section__items {
+    width: 100%;
+    display: flex;
+  }
+  .section__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .item__icon {
+    width: 100%;
+    height: 100px;
+  }
+  .item__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .item__desc {
+    line-height: 24px;
   }
 
   .button {
@@ -77,11 +120,17 @@ body {
 }
 
 header {
+  width: 100%;
+  position: relative;
   display: flex;
+  z-index: 5;
+  position: fixed;
+  background-color: #fff;
   justify-content: space-between;
   padding: 12px 20px;
   height: 60px;
   white-space: nowrap;
+  top: 0px;
   .header {
     &__nav {
       display: flex;
@@ -115,3 +164,54 @@ header {
   }
 }
 
+.preview {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 160px;
+  .section__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 90px;
+  }
+  .section__title {
+    text-align: left;
+    line-height: 54px;
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  .section__text {
+    margin-bottom: 20px;
+  }
+}
+
+.how {
+  margin-bottom: 120px;
+  .section__title {
+    margin-bottom: 50px;
+  }
+  .section__items {
+    justify-content: space-between;
+    text-align: center;
+    }
+  .section__item {
+    width: 290px;
+    padding: 0 18px;
+  }
+  .item__title {
+    margin: 14px 0;
+  }
+}
+
+.boost {
+}
+
+.storefront {
+}
+
+.more {
+}
+
+.take {
+}
