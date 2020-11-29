@@ -29,7 +29,8 @@
 
 .icon-arrow {
   &:before {
-    content: $icon-arrow; 
+    content: $icon-arrow;
+    color: #333;
   }
 }
 .icon-burger {
