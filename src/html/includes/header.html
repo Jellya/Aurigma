@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
+    <meta name="description" content="<%=desc%>">
+    <meta name="keywords" content="<%=keyw%>">
     <link rel="shortcut icon" href="favicon/favicon.ico" />
     <link rel="stylesheet" href="css/style.bundle.css" />
-
     <title><%=title%></title>
   </head>
   <body>
@@ -26,6 +26,17 @@
         <div class="header__phone">1-800-661-8190</div>
         <a class="header__search icon-search" href="#"></a>
         <a href="#" class="button header__viewdemo">View Demo</a>
-        <a href="#" class="header__burger icon-burger"></a>
+        <a href="#" class="header__burger icon-burger" id="burgeropen"></a>
       </div>
+      <nav class="burger" id="burgermenu">
+        <a href="#" class="header__burger icon-burger" id="burgerclose"></a>
+        <ul class="burger__menu">
+          <li class="burger__link"><a href="#products">Products</a></li>
+          <li class="burger__link"><a href="#features">Features</a></li>
+          <li class="burger__link"><a href="#start">Getting Started</a></li>
+          <li class="burger__link"><a href="#verticals">Verticals</a></li>
+          <li class="burger__link"><a href="#company">Company</a></li>
+          <li class="burger__link"><a href="#account">My Account</a></li>
+        </ul>
+      </nav>
     </header>
