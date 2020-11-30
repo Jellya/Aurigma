@@ -15,13 +15,17 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-function PopUpShow() {
-  jQuery("#burgermenu").show();
-}
-function PopUpHide() {
-  jQuery("#burgermenu").hide();
-}
+
 jQuery(document).ready(function () {
-  PopUpHide();
+  jQuery("#burgermenu").hide();
 });
+
+jQuery("#burgeropen").click(function() {
+  jQuery("#burgermenu").show();
+})
+
+jQuery("#burgerclose").click(function() {
+  jQuery("#burgermenu").hide();
+})
+
 

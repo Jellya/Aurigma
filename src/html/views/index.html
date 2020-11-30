@@ -1,5 +1,10 @@
-<% var data = { title: "Customer's Canvas" }; %> <%=
-_.template(require('./../includes/header.html').default)(data) %>
+<% var data = {
+  title: "Customer's Canvas",
+  desc: "Product customization for Shopify",
+  keyw: "unique storefront, web-to-print, Customer’s Canvas, customization, Shopify, Aurigma"
+}; %>
+<%=_.template(require('./../includes/header.html').default)(data) %>
+
 <div class="chat">
   <img src="img/chat.svg" alt="chat">
 </div>
