@@ -233,6 +233,18 @@ header {
       }
     }
   }
+  .burger {
+    &__nav {
+      width: 100%;
+      min-height: 100%;
+      top: 0;
+      left: 0;
+      position: fixed;
+      overflow:hidden;
+      z-index: 50;
+      background-color: #fff;
+    }
+  }
 }
 
 .chat {
